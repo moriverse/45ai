@@ -1,0 +1,20 @@
+server:
+  port: "8080"
+  mode: "debug" # gin mode: debug, release
+
+database:
+  dsn: "root:password@tcp(127.0.0.1:3306)/ai_photo?charset=utf8mb4&parseTime=True&loc=Local"
+
+jwt:
+  secret_key: "your-super-secret-key-that-is-long-and-secure"
+  expires_in_hours: 72
+
+wechat:
+  app_id: "your_wechat_app_id"
+  mch_id: "your_merchant_id"
+  api_v3_key: "your_wechat_api_v3_key"
+  private_key_path: "./configs/apiclient_key.pem"
+
+ai_service:
+  api_key: "your_ai_service_api_key"
+  api_endpoint: "https://api.externalservice.com/v1/generate" 
